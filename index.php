@@ -16,6 +16,10 @@ error_reporting(0);
 $file = file_get_contents('https://api.tfl.gov.uk/Line/district/Arrivals/940GZZLUSKS?direction=inbound&destinationStationId=940GZZLURMD');
 // Decode the JSON into an associative array
 $data = json_decode($file, true);
+// Reorder by time to station
+usort($data, function($a, $b) {
+    return $a['timeToStation'] <=> $b['timeToStation'];
+});
 // Print the date from the associative array
 foreach($data as $train) {
     echo "<li class='bg-gray-800 p-2 text-amber-500 uppercase m-2 flex flex-row flex-wrap'>";
