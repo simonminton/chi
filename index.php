@@ -8,10 +8,11 @@ error_reporting(0);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="15">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
     </head>
     <body class="bg-black">
-        <div class="text-white py-2 font-bold text-center">SOUTH KENSINGTON</div>
-<ul class="bg-gray-900 px-4 md:px-8 py-6 max-w-md w-full mx-auto font-mono">
+        <div class="text-gray-200 py-2 font-bold text-center">SOUTH KENSINGTON</div>
+<ul class="bg-gray-900 rounded-md px-4 md:px-8 py-6 max-w-md w-full mx-auto dotmatrix">
     <?php
 $file = file_get_contents('https://api.tfl.gov.uk/Line/district/Arrivals/940GZZLUSKS?direction=inbound&destinationStationId=940GZZLURMD');
 // Decode the JSON into an associative array
@@ -22,7 +23,7 @@ usort($data, function($a, $b) {
 });
 // Print the date from the associative array
 foreach($data as $train) {
-    echo "<li class='bg-gray-800 p-2 text-amber-500 uppercase m-2 flex flex-row flex-wrap'>";
+    echo "<li class='rounded-sm bg-gray-800 p-2 text-amber-500 uppercase m-2 flex flex-row flex-wrap'>";
     // Convert the seconds into a human readable format
     $init =  $train['timeToStation'];
 $hours = floor($init / 3600);
