@@ -29,7 +29,7 @@ if($seconds < 10) {
 }
 
     $time = "$minutes:$seconds";
-    echo '<div class="flex-1 ">KEW GARDENS</div>';
+    echo '<div class="flex-1 ">RICHMOND</div>';
     echo '<div class="flex-0 "><span class="text-xs">in</span> '.$time . '</div>';
     echo '<div class="w-full text-amber-400 text-xs">'.$train['currentLocation']."</div></li>";
 }
