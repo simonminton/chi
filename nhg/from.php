@@ -3,7 +3,7 @@ error_reporting(0);
 ?>
 <html>
     <head>
-        <title>Trains To SKen</title>
+        <title>Trains from NHG</title>
         <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="15">
