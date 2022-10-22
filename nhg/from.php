@@ -56,7 +56,8 @@ $destination = str_replace(" (Circle Line)", "", $destination);
 <a href="/nhg/from.php">All Lines</a>
 <a href="/nhg/from.php?line=central">Central</a>
 <a href="/nhg/from.php?line=circle">Circle</a>
-<a href="/nhg/from.php?line=disctrict">District</a>
+<a href="/nhg/from.php?line=district">District</a>
+<a href="/nhg/from.php?line=hammersmith-city">Hammersmith & City</a>
 </div>
 
     </body>
